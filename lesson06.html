@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>22-6 Spread operator, concatenate multiple arrays, array max</title>
+</head>
+
+<body>
+    <h1>22-6 Spread operator, concatenate multiple arrays, array max</h1>
+
+    <script>
+        const ages = [12, 14, 16, 13, 17];
+        const ages2 = [15, 16, 12];
+        const ages3 = [25, 36, 22, 29];
+
+        const allAges = ages.concat(ages2).concat([5]).concat(ages3);
+        const allAges2 = [ages, ages2, ages3]; // adding multiple array not the value
+        const allAges3 = [...ages, ...ages2, 5, ...ages3]; // adds the values of arrays
+
+        // const business = 650;
+        // const minister = 950;
+        // const sachib = 250;
+        const takaPoisa = [650,950,250];
+
+        const maximum = Math.max(...takaPoisa);
+
+        console.log(allAges);
+        console.log(allAges2);
+        console.log(allAges3);
+        console.log(maximum);
+
+    </script>
+
+</body>
+
+</html>
