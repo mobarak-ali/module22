@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>22-5 Arrow function, multiple parameter, function body</title>
+</head>
+
+<body>
+    <h1>22-5 Arrow function, multiple parameter, function body</h1>
+
+    <script>
+        // function doubleIt(num) {
+        //     return num * 2;
+        // }
+
+        // const doubleIt = function myFunc(num){
+        //     return num * 2;
+        // }
+
+// arrow function;
+        const doubleIt = num => num * 2 ;
+
+        const add = (x,y) => x+y;
+
+        const give5 = () => 5;
+
+        const result = doubleIt(50);
+        const result2 = add(50, 60);
+        const result3 = give5()
+
+        const doMath = (x,y) => {
+            const sum = x + y ;
+            const difference = x-y;
+
+            const result =  sum * difference;
+            return result;
+        }
+
+        console.log(result);
+        console.log(result2);
+        console.log(result3);
+        console.log(doMath(7,5));
+    </script>
+</body>
+
+</html>
